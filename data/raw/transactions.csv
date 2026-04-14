@@ -1,0 +1,1 @@
+id,amount,currency,merchant,merchantCategory,location,accountAge,avgMonthlySpend,hourOfDay,dayOfWeek,previousFraudFlags,distanceFromLastTransaction,timeSinceLastTransaction,isInternational,cardPresent
