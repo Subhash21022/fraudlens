@@ -15,6 +15,7 @@ export const appRateLimit: RateLimitRequestHandler = rateLimit({
    legacyHeaders: false,
    // ✅ Remove custom keyGenerator - let library handle IP properly
    handler: (req: Request, res: Response) => {
+      console.log(req);
       res.status(429).json({
          error: 'Too many requests',
          message: 'Rate limit exceeded. Please try again later.',

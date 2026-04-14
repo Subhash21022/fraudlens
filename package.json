@@ -4,6 +4,7 @@
    "scripts": {
       "dev": "nodemon",
       "start": "node dist/server.js",
+      "agent:run": "ts-node src/modules/agent/index.ts",
       "build": "tsc",
       "format": "prettier --write .",
       "format:check": "prettier --check .",

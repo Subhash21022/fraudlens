@@ -6,5 +6,6 @@ build
 npm-debug.log
 .vscode
 
+data/raw
 google_secret.json
 llm.txt

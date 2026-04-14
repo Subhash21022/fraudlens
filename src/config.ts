@@ -14,7 +14,8 @@ export const envSchema = z.object({
    BACKEND_URL: z.string().url().default('http://localhost:3000'),
    FRONTEND_URL: z.string().url().default('http://localhost:5173'),
 
-   OPENAI_API_KEY: z.string().optional(),
+   OPENROUTER_API_KEY: z.string().optional(),
+   OPENROUTER_MODEL: z.string().default('google/gemma-4-31b-it:free'),
    LANGFUSE_PUBLIC_KEY: z.string().optional(),
    LANGFUSE_SECRET_KEY: z.string().optional(),
    LANGFUSE_HOST: z.string().url().default('https://cloud.langfuse.com'),
