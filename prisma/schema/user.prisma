@@ -1,0 +1,67 @@
+enum FinalVerdict {
+  FRAUD
+  LEGITIMATE
+}
+
+model ProcessingRun {
+  id                     String        @id @default(cuid())
+  langfuseSessionId      String?
+  totalPromptTokens      Int           @default(0)
+  totalCompletionTokens  Int           @default(0)
+  totalCostUsd           Decimal       @default(0) @db.Decimal(12, 6)
+  startedAt              DateTime      @default(now())
+  completedAt            DateTime?
+  transactions           Transaction[]
+}
+
+model Transaction {
+  id                          String          @id
+  runId                       String
+  amount                      Decimal         @db.Decimal(14, 2)
+  currency                    String
+  merchant                    String
+  merchantCategory            String
+  location                    String
+  accountAge                  Int
+  avgMonthlySpend             Decimal         @db.Decimal(14, 2)
+  hourOfDay                   Int
+  dayOfWeek                   String
+  previousFraudFlags          Int
+  distanceFromLastTransaction Float
+  timeSinceLastTransaction    Float
+  isInternational             Boolean
+  cardPresent                 Boolean
+  llmSkipped                  Boolean         @default(false)
+  finalVerdict                FinalVerdict?
+  createdAt                   DateTime        @default(now())
+  updatedAt                   DateTime        @updatedAt
+  run                         ProcessingRun   @relation(fields: [runId], references: [id], onDelete: Cascade)
+  investigation               Investigation?
+  decision                    Decision?
+
+  @@index([runId])
+  @@index([finalVerdict])
+}
+
+model Investigation {
+  id              String      @id @default(cuid())
+  transactionId   String      @unique
+  suspicionScore  Int
+  redFlags        String[]
+  createdAt       DateTime    @default(now())
+  transaction     Transaction @relation(fields: [transactionId], references: [id], onDelete: Cascade)
+}
+
+model Decision {
+  id               String      @id @default(cuid())
+  transactionId    String      @unique
+  verdict          FinalVerdict
+  confidence       Int
+  reasoning        String
+  model            String?
+  promptTokens     Int         @default(0)
+  completionTokens Int         @default(0)
+  costUsd          Decimal     @default(0) @db.Decimal(12, 6)
+  createdAt        DateTime    @default(now())
+  transaction      Transaction @relation(fields: [transactionId], references: [id], onDelete: Cascade)
+}
