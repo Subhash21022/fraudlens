@@ -1,9 +1,9 @@
 export type UserProfile = {
    citizenId: string;
+   birthYear?: number;
    age?: number;
-   gender?: string;
-   region?: string;
-   riskContext?: Record<string, unknown>;
+   job?: string;
+   residence?: Record<string, unknown>;
 };
 
 export type LocationPoint = {
@@ -17,19 +17,68 @@ export type LocationSummary = {
    mobilityScore?: number;
    stabilityScore?: number;
    environmentalStressScore?: number;
+   uniqueCities10?: number;
+   totalDistanceKm10?: number;
+   avgStepDistanceKm10?: number;
+   distanceFromHomeKm?: number;
 };
 
-export type MonitoringEventInput = {
-   eventId: string;
+export type PersonaSummary = {
    citizenId: string;
-   eventType: string;
-   physicalActivityIndex: number;
-   sleepQualityIndex: number;
-   environmentalExposureLevel: number;
-   timestamp: string;
+   name?: string;
+   ageFromPersona?: number;
+   occupationFromPersona?: string;
+   cityFromPersona?: string;
+   narrative?: string;
+   mobilityDescription?: string;
+   healthBehaviorDescription?: string;
+   socialPatternDescription?: string;
+   flags?: Record<string, boolean>;
+};
+
+export type TimelineSummary = {
+   firstTimestamp: string;
+   lastTimestamp: string;
+   totalEvents: number;
+   daysCovered?: number;
+   averageDaysBetweenEvents?: number | null;
+   eventTypeCounts?: Record<string, number>;
+};
+
+export type MetricSummary = {
+   first?: number;
+   latest?: number;
+   deltaFromFirst?: number;
+   deltaFromRecentMean5?: number;
+   min?: number;
+   max?: number;
+   mean?: number;
+   median?: number;
+   std?: number;
+   slope?: number;
+};
+
+export type CitizenMetrics = {
+   activity?: MetricSummary;
+   sleep?: MetricSummary;
+   exposure?: MetricSummary;
+};
+
+export type CitizenSummaryInput = {
+   citizenId: string;
    user?: UserProfile;
+   persona?: PersonaSummary | null;
+   timeline: TimelineSummary;
+   metrics: CitizenMetrics;
    locationSummary?: LocationSummary;
-   derivedSignals?: Record<string, unknown>;
+   preprocessFlags?: Record<string, boolean>;
+   qualityFlags?: string[];
+   pythonInvestigatorPreview?: {
+      riskScore?: number;
+      reasons?: string[];
+      shouldEscalate?: boolean;
+   };
+   events?: Array<Record<string, unknown>>;
 };
 
 export type InvestigationResult = {
@@ -37,6 +86,7 @@ export type InvestigationResult = {
    citizenId: string;
    riskScore: number;
    riskIndicators: string[];
+   summary: string;
    shouldEscalateToDecider: boolean;
 };
 

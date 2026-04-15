@@ -1,1 +1,6 @@
-# Keep dependencies minimal for data cleaning scripts.
+# Runtime preprocessing
+numpy>=1.26
+
+# Recommended for deeper offline analysis, notebooks, and diagnostics
+# pandas>=2.2
+# matplotlib>=3.8

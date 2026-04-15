@@ -1,0 +1,1664 @@
+[
+  {
+    "citizenId": "DCGGXUWF",
+    "user": {
+      "citizenId": "DCGGXUWF",
+      "birthYear": 1931,
+      "age": 95,
+      "job": "Retired",
+      "residence": {
+        "city": "Detroit",
+        "lat": "42.3834",
+        "lng": "-83.1024"
+      }
+    },
+    "persona": {
+      "citizenId": "DCGGXUWF",
+      "name": "George Neal",
+      "ageFromPersona": 95,
+      "occupationFromPersona": "Retired",
+      "cityFromPersona": "Detroit, Michigan, USA",
+      "narrative": "George is a retired autoworker who has lived in the same Detroit neighborhood for over 60 years. Despite his advanced age, he has a solid support network: his daughter lives ten minutes away and visits daily, a home aide comes three mornings a week, and neighbors check on him regularly. He rises early, enjoys simple routines, watches baseball on TV, and sits on his front porch in good weather. He walks slowly to the corner store when his daughter is not around to drive him. He manages several age-related conditions but his care is well-coordinated through a local clinic that monitors him closely. He has a medical alert pendant and his prescriptions are delivered to his door.",
+      "mobilityDescription": "Very low but supported. Daughter drives him to appointments. Home aide assists with daily needs.",
+      "healthBehaviorDescription": "Multiple chronic conditions, but well-managed with coordinated care and prescription delivery.",
+      "socialPatternDescription": "Daily contact with daughter, home aide, and neighbors. Watches sports with a longtime friend on weekends.",
+      "flags": {
+        "personaRiskSignalsPresent": false,
+        "personaProtectiveSignalsPresent": true
+      }
+    },
+    "timeline": {
+      "firstTimestamp": "2026-01-01T00:00:00",
+      "lastTimestamp": "2026-11-16T04:27:48",
+      "totalEvents": 10,
+      "daysCovered": 319.186,
+      "averageDaysBetweenEvents": 35.4651,
+      "eventTypeCounts": {
+        "routine check-up": 4,
+        "preventive screening": 3,
+        "lifestyle coaching session": 3
+      }
+    },
+    "metrics": {
+      "activity": {
+        "first": 41.0,
+        "latest": 36.0,
+        "deltaFromFirst": -5.0,
+        "deltaFromRecentMean5": 1.4,
+        "min": 29.0,
+        "max": 41.0,
+        "mean": 35.9,
+        "median": 36.0,
+        "std": 3.3302,
+        "slope": -0.503
+      },
+      "sleep": {
+        "first": 45.0,
+        "latest": 49.0,
+        "deltaFromFirst": 4.0,
+        "deltaFromRecentMean5": 3.4,
+        "min": 39.0,
+        "max": 56.0,
+        "mean": 47.9,
+        "median": 48.5,
+        "std": 4.7212,
+        "slope": -0.2121
+      },
+      "exposure": {
+        "first": 32.0,
+        "latest": 32.0,
+        "deltaFromFirst": 0.0,
+        "deltaFromRecentMean5": 0.4,
+        "min": 22.0,
+        "max": 36.0,
+        "mean": 29.0,
+        "median": 29.0,
+        "std": 4.1713,
+        "slope": 0.5212
+      }
+    },
+    "locationSummary": {
+      "points": [
+        {
+          "datetime": "2026-10-28T16:35:55",
+          "lat": 42.4086,
+          "lng": -83.055,
+          "city": "Detroit"
+        },
+        {
+          "datetime": "2026-10-30T05:05:54",
+          "lat": 42.4005,
+          "lng": -83.1413,
+          "city": "Detroit"
+        },
+        {
+          "datetime": "2026-10-31T04:14:30",
+          "lat": 42.3475,
+          "lng": -83.1243,
+          "city": "Detroit"
+        },
+        {
+          "datetime": "2026-11-03T22:27:29",
+          "lat": 42.4023,
+          "lng": -83.0939,
+          "city": "Detroit"
+        },
+        {
+          "datetime": "2026-11-05T20:15:33",
+          "lat": 42.3996,
+          "lng": -83.1401,
+          "city": "Detroit"
+        },
+        {
+          "datetime": "2026-11-06T15:47:38",
+          "lat": 42.3888,
+          "lng": -83.162,
+          "city": "Detroit"
+        },
+        {
+          "datetime": "2026-11-07T14:36:05",
+          "lat": 42.4005,
+          "lng": -83.1365,
+          "city": "Detroit"
+        },
+        {
+          "datetime": "2026-11-08T04:43:33",
+          "lat": 42.4041,
+          "lng": -83.1377,
+          "city": "Detroit"
+        },
+        {
+          "datetime": "2026-11-10T22:28:53",
+          "lat": 42.3879,
+          "lng": -83.0902,
+          "city": "Detroit"
+        },
+        {
+          "datetime": "2026-11-11T11:26:41",
+          "lat": 42.4086,
+          "lng": -83.0963,
+          "city": "Detroit"
+        }
+      ],
+      "mobilityScore": 0.3528,
+      "stabilityScore": 0.9,
+      "environmentalStressScore": 0.2529,
+      "uniqueCities10": 1,
+      "totalDistanceKm10": 35.2822,
+      "avgStepDistanceKm10": 3.9202,
+      "distanceFromHomeKm": 2.8465
+    },
+    "preprocessFlags": {
+      "lowActivityLatest": false,
+      "poorSleepLatest": true,
+      "highExposureLatest": false,
+      "decliningActivityTrend": false,
+      "decliningSleepTrend": false,
+      "risingExposureTrend": false,
+      "unstableMobility": false,
+      "highEnvironmentalStress": false,
+      "combinedBehavioralRisk": false
+    },
+    "qualityFlags": [],
+    "pythonInvestigatorPreview": {
+      "riskScore": 10,
+      "reasons": [
+        "low_sleep"
+      ],
+      "shouldEscalate": false
+    },
+    "events": [
+      {
+        "eventId": "41",
+        "eventType": "routine check-up",
+        "timestamp": "2026-01-01T00:00:00",
+        "physicalActivityIndex": 41.0,
+        "sleepQualityIndex": 45.0,
+        "environmentalExposureLevel": 32.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.41,
+          "sleepNormalized": 0.45,
+          "exposureNormalized": 0.32,
+          "activityRiskNormalized": 0.59,
+          "sleepRiskNormalized": 0.55,
+          "exposureRiskNormalized": 0.32
+        }
+      },
+      {
+        "eventId": "42",
+        "eventType": "preventive screening",
+        "timestamp": "2026-02-09T19:59:28",
+        "physicalActivityIndex": 36.0,
+        "sleepQualityIndex": 48.0,
+        "environmentalExposureLevel": 27.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.36,
+          "sleepNormalized": 0.48,
+          "exposureNormalized": 0.27,
+          "activityRiskNormalized": 0.64,
+          "sleepRiskNormalized": 0.52,
+          "exposureRiskNormalized": 0.27
+        }
+      },
+      {
+        "eventId": "43",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-03-09T09:29:09",
+        "physicalActivityIndex": 41.0,
+        "sleepQualityIndex": 56.0,
+        "environmentalExposureLevel": 25.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.41,
+          "sleepNormalized": 0.56,
+          "exposureNormalized": 0.25,
+          "activityRiskNormalized": 0.59,
+          "sleepRiskNormalized": 0.44,
+          "exposureRiskNormalized": 0.25
+        }
+      },
+      {
+        "eventId": "44",
+        "eventType": "routine check-up",
+        "timestamp": "2026-04-09T17:23:20",
+        "physicalActivityIndex": 33.0,
+        "sleepQualityIndex": 51.0,
+        "environmentalExposureLevel": 22.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.33,
+          "sleepNormalized": 0.51,
+          "exposureNormalized": 0.22,
+          "activityRiskNormalized": 0.67,
+          "sleepRiskNormalized": 0.49,
+          "exposureRiskNormalized": 0.22
+        }
+      },
+      {
+        "eventId": "45",
+        "eventType": "preventive screening",
+        "timestamp": "2026-05-17T18:33:23",
+        "physicalActivityIndex": 35.0,
+        "sleepQualityIndex": 51.0,
+        "environmentalExposureLevel": 26.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.35,
+          "sleepNormalized": 0.51,
+          "exposureNormalized": 0.26,
+          "activityRiskNormalized": 0.65,
+          "sleepRiskNormalized": 0.49,
+          "exposureRiskNormalized": 0.26
+        }
+      },
+      {
+        "eventId": "46",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-07-08T17:32:50",
+        "physicalActivityIndex": 36.0,
+        "sleepQualityIndex": 43.0,
+        "environmentalExposureLevel": 31.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.36,
+          "sleepNormalized": 0.43,
+          "exposureNormalized": 0.31,
+          "activityRiskNormalized": 0.64,
+          "sleepRiskNormalized": 0.57,
+          "exposureRiskNormalized": 0.31
+        }
+      },
+      {
+        "eventId": "47",
+        "eventType": "routine check-up",
+        "timestamp": "2026-08-12T08:50:38",
+        "physicalActivityIndex": 29.0,
+        "sleepQualityIndex": 39.0,
+        "environmentalExposureLevel": 33.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.29,
+          "sleepNormalized": 0.39,
+          "exposureNormalized": 0.33,
+          "activityRiskNormalized": 0.71,
+          "sleepRiskNormalized": 0.61,
+          "exposureRiskNormalized": 0.33
+        }
+      },
+      {
+        "eventId": "48",
+        "eventType": "preventive screening",
+        "timestamp": "2026-09-03T23:29:47",
+        "physicalActivityIndex": 37.0,
+        "sleepQualityIndex": 45.0,
+        "environmentalExposureLevel": 36.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.37,
+          "sleepNormalized": 0.45,
+          "exposureNormalized": 0.36,
+          "activityRiskNormalized": 0.63,
+          "sleepRiskNormalized": 0.55,
+          "exposureRiskNormalized": 0.36
+        }
+      },
+      {
+        "eventId": "49",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-10-14T14:34:05",
+        "physicalActivityIndex": 35.0,
+        "sleepQualityIndex": 52.0,
+        "environmentalExposureLevel": 26.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.35,
+          "sleepNormalized": 0.52,
+          "exposureNormalized": 0.26,
+          "activityRiskNormalized": 0.65,
+          "sleepRiskNormalized": 0.48,
+          "exposureRiskNormalized": 0.26
+        }
+      },
+      {
+        "eventId": "50",
+        "eventType": "routine check-up",
+        "timestamp": "2026-11-16T04:27:48",
+        "physicalActivityIndex": 36.0,
+        "sleepQualityIndex": 49.0,
+        "environmentalExposureLevel": 32.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.36,
+          "sleepNormalized": 0.49,
+          "exposureNormalized": 0.32,
+          "activityRiskNormalized": 0.64,
+          "sleepRiskNormalized": 0.51,
+          "exposureRiskNormalized": 0.32
+        }
+      }
+    ]
+  },
+  {
+    "citizenId": "IAFGUHCK",
+    "user": {
+      "citizenId": "IAFGUHCK",
+      "birthYear": 1944,
+      "age": 82,
+      "job": "Retired",
+      "residence": {
+        "city": "Ostwald",
+        "lat": "48.5425",
+        "lng": "7.7103"
+      }
+    },
+    "persona": {
+      "citizenId": "IAFGUHCK",
+      "name": "Christiane Fontaine",
+      "ageFromPersona": 82,
+      "occupationFromPersona": "Retired",
+      "cityFromPersona": "Ostwald, France",
+      "narrative": "Christiane is a retired widow living alone in a quiet residential neighborhood of Ostwald, near Strasbourg. She follows a slow, predictable daily rhythm: morning tea by the window, a short walk to the local bakery, and occasional visits to the nearby park. She rarely leaves the Strasbourg metropolitan area, preferring familiar surroundings. Once a year she might travel to visit a distant relative. Her social circle has narrowed over the years, but she still meets a neighbor for coffee on weekday mornings. She is careful with her health and visits the local pharmacy periodically for routine prescriptions. She avoids digital technology and relies on landline calls and in-person interactions.",
+      "mobilityDescription": "Low. Walks within a 2-3 km radius of her home. Occasional bus rides into central Strasbourg.",
+      "healthBehaviorDescription": "Moderate pharmacy visits, annual checkup. Generally stable.",
+      "socialPatternDescription": "Small but consistent social interactions. Regular bakery and park visits.",
+      "flags": {
+        "personaRiskSignalsPresent": false,
+        "personaProtectiveSignalsPresent": true
+      }
+    },
+    "timeline": {
+      "firstTimestamp": "2026-01-05T13:41:36",
+      "lastTimestamp": "2026-11-17T00:54:27",
+      "totalEvents": 10,
+      "daysCovered": 315.4673,
+      "averageDaysBetweenEvents": 35.0519,
+      "eventTypeCounts": {
+        "routine check-up": 4,
+        "preventive screening": 3,
+        "lifestyle coaching session": 3
+      }
+    },
+    "metrics": {
+      "activity": {
+        "first": 31.0,
+        "latest": 30.0,
+        "deltaFromFirst": -1.0,
+        "deltaFromRecentMean5": -4.0,
+        "min": 28.0,
+        "max": 40.0,
+        "mean": 34.0,
+        "median": 34.5,
+        "std": 4.1473,
+        "slope": -0.2909
+      },
+      "sleep": {
+        "first": 42.0,
+        "latest": 53.0,
+        "deltaFromFirst": 11.0,
+        "deltaFromRecentMean5": 1.0,
+        "min": 42.0,
+        "max": 58.0,
+        "mean": 49.6,
+        "median": 48.5,
+        "std": 4.8,
+        "slope": 0.7273
+      },
+      "exposure": {
+        "first": 33.0,
+        "latest": 29.0,
+        "deltaFromFirst": -4.0,
+        "deltaFromRecentMean5": -0.4,
+        "min": 26.0,
+        "max": 37.0,
+        "mean": 30.7,
+        "median": 29.5,
+        "std": 3.0017,
+        "slope": -0.2364
+      }
+    },
+    "locationSummary": {
+      "points": [
+        {
+          "datetime": "2026-10-30T02:18:32",
+          "lat": 48.5407,
+          "lng": 7.7768,
+          "city": "Ostwald"
+        },
+        {
+          "datetime": "2026-10-31T08:21:59",
+          "lat": 48.5057,
+          "lng": 7.694,
+          "city": "Ostwald"
+        },
+        {
+          "datetime": "2026-11-01T04:26:24",
+          "lat": 48.5317,
+          "lng": 7.6723,
+          "city": "Ostwald"
+        },
+        {
+          "datetime": "2026-11-04T15:57:26",
+          "lat": 48.5703,
+          "lng": 7.7266,
+          "city": "Ostwald"
+        },
+        {
+          "datetime": "2026-11-05T05:35:29",
+          "lat": 48.5542,
+          "lng": 7.7252,
+          "city": "Ostwald"
+        },
+        {
+          "datetime": "2026-11-06T20:31:49",
+          "lat": 48.5173,
+          "lng": 7.6669,
+          "city": "Ostwald"
+        },
+        {
+          "datetime": "2026-11-07T06:59:01",
+          "lat": 48.5218,
+          "lng": 7.7591,
+          "city": "Ostwald"
+        },
+        {
+          "datetime": "2026-11-10T12:59:00",
+          "lat": 48.5551,
+          "lng": 7.7632,
+          "city": "Ostwald"
+        },
+        {
+          "datetime": "2026-11-12T09:04:21",
+          "lat": 48.529,
+          "lng": 7.6913,
+          "city": "Ostwald"
+        },
+        {
+          "datetime": "2026-11-15T07:31:03",
+          "lat": 48.5272,
+          "lng": 7.7632,
+          "city": "Ostwald"
+        }
+      ],
+      "mobilityScore": 0.4599,
+      "stabilityScore": 0.9,
+      "environmentalStressScore": 0.3405,
+      "uniqueCities10": 1,
+      "totalDistanceKm10": 45.9928,
+      "avgStepDistanceKm10": 5.1103,
+      "distanceFromHomeKm": 4.2503
+    },
+    "preprocessFlags": {
+      "lowActivityLatest": true,
+      "poorSleepLatest": false,
+      "highExposureLatest": false,
+      "decliningActivityTrend": false,
+      "decliningSleepTrend": false,
+      "risingExposureTrend": false,
+      "unstableMobility": false,
+      "highEnvironmentalStress": false,
+      "combinedBehavioralRisk": false
+    },
+    "qualityFlags": [],
+    "pythonInvestigatorPreview": {
+      "riskScore": 15,
+      "reasons": [
+        "low_activity"
+      ],
+      "shouldEscalate": false
+    },
+    "events": [
+      {
+        "eventId": "1",
+        "eventType": "routine check-up",
+        "timestamp": "2026-01-05T13:41:36",
+        "physicalActivityIndex": 31.0,
+        "sleepQualityIndex": 42.0,
+        "environmentalExposureLevel": 33.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.31,
+          "sleepNormalized": 0.42,
+          "exposureNormalized": 0.33,
+          "activityRiskNormalized": 0.69,
+          "sleepRiskNormalized": 0.58,
+          "exposureRiskNormalized": 0.33
+        }
+      },
+      {
+        "eventId": "2",
+        "eventType": "preventive screening",
+        "timestamp": "2026-01-29T06:03:18",
+        "physicalActivityIndex": 37.0,
+        "sleepQualityIndex": 52.0,
+        "environmentalExposureLevel": 30.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.37,
+          "sleepNormalized": 0.52,
+          "exposureNormalized": 0.3,
+          "activityRiskNormalized": 0.63,
+          "sleepRiskNormalized": 0.48,
+          "exposureRiskNormalized": 0.3
+        }
+      },
+      {
+        "eventId": "3",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-03-04T15:46:11",
+        "physicalActivityIndex": 34.0,
+        "sleepQualityIndex": 49.0,
+        "environmentalExposureLevel": 31.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.34,
+          "sleepNormalized": 0.49,
+          "exposureNormalized": 0.31,
+          "activityRiskNormalized": 0.66,
+          "sleepRiskNormalized": 0.51,
+          "exposureRiskNormalized": 0.31
+        }
+      },
+      {
+        "eventId": "4",
+        "eventType": "routine check-up",
+        "timestamp": "2026-04-27T13:11:04",
+        "physicalActivityIndex": 40.0,
+        "sleepQualityIndex": 47.0,
+        "environmentalExposureLevel": 29.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.4,
+          "sleepNormalized": 0.47,
+          "exposureNormalized": 0.29,
+          "activityRiskNormalized": 0.6,
+          "sleepRiskNormalized": 0.53,
+          "exposureRiskNormalized": 0.29
+        }
+      },
+      {
+        "eventId": "5",
+        "eventType": "preventive screening",
+        "timestamp": "2026-05-22T17:24:58",
+        "physicalActivityIndex": 28.0,
+        "sleepQualityIndex": 46.0,
+        "environmentalExposureLevel": 37.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.28,
+          "sleepNormalized": 0.46,
+          "exposureNormalized": 0.37,
+          "activityRiskNormalized": 0.72,
+          "sleepRiskNormalized": 0.54,
+          "exposureRiskNormalized": 0.37
+        }
+      },
+      {
+        "eventId": "6",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-06-27T11:51:35",
+        "physicalActivityIndex": 35.0,
+        "sleepQualityIndex": 48.0,
+        "environmentalExposureLevel": 26.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.35,
+          "sleepNormalized": 0.48,
+          "exposureNormalized": 0.26,
+          "activityRiskNormalized": 0.65,
+          "sleepRiskNormalized": 0.52,
+          "exposureRiskNormalized": 0.26
+        }
+      },
+      {
+        "eventId": "7",
+        "eventType": "routine check-up",
+        "timestamp": "2026-08-02T11:13:46",
+        "physicalActivityIndex": 40.0,
+        "sleepQualityIndex": 58.0,
+        "environmentalExposureLevel": 29.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.4,
+          "sleepNormalized": 0.58,
+          "exposureNormalized": 0.29,
+          "activityRiskNormalized": 0.6,
+          "sleepRiskNormalized": 0.42,
+          "exposureRiskNormalized": 0.29
+        }
+      },
+      {
+        "eventId": "8",
+        "eventType": "preventive screening",
+        "timestamp": "2026-09-05T22:29:12",
+        "physicalActivityIndex": 36.0,
+        "sleepQualityIndex": 56.0,
+        "environmentalExposureLevel": 34.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.36,
+          "sleepNormalized": 0.56,
+          "exposureNormalized": 0.34,
+          "activityRiskNormalized": 0.64,
+          "sleepRiskNormalized": 0.44,
+          "exposureRiskNormalized": 0.34
+        }
+      },
+      {
+        "eventId": "9",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-10-26T22:13:32",
+        "physicalActivityIndex": 29.0,
+        "sleepQualityIndex": 45.0,
+        "environmentalExposureLevel": 29.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.29,
+          "sleepNormalized": 0.45,
+          "exposureNormalized": 0.29,
+          "activityRiskNormalized": 0.71,
+          "sleepRiskNormalized": 0.55,
+          "exposureRiskNormalized": 0.29
+        }
+      },
+      {
+        "eventId": "10",
+        "eventType": "routine check-up",
+        "timestamp": "2026-11-17T00:54:27",
+        "physicalActivityIndex": 30.0,
+        "sleepQualityIndex": 53.0,
+        "environmentalExposureLevel": 29.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.3,
+          "sleepNormalized": 0.53,
+          "exposureNormalized": 0.29,
+          "activityRiskNormalized": 0.7,
+          "sleepRiskNormalized": 0.47,
+          "exposureRiskNormalized": 0.29
+        }
+      }
+    ]
+  },
+  {
+    "citizenId": "IXTDRHTR",
+    "user": {
+      "citizenId": "IXTDRHTR",
+      "birthYear": 1936,
+      "age": 90,
+      "job": "Retired",
+      "residence": {
+        "city": "London",
+        "lat": "51.5072",
+        "lng": "-0.1275"
+      }
+    },
+    "persona": {
+      "citizenId": "IXTDRHTR",
+      "name": "Natasha Turner",
+      "ageFromPersona": 90,
+      "occupationFromPersona": "Retired",
+      "cityFromPersona": "London, United Kingdom",
+      "narrative": "Natasha is a long-retired schoolteacher living in a ground-floor flat in central London. Despite her age, she remains mentally sharp and relatively independent. She walks to the local shops for essentials and enjoys sitting in nearby parks when the weather permits. She occasionally takes the bus to visit old friends in other parts of London. She travels rarely, but once accepted an invitation to visit family in Belgium. She watches the news religiously and reads the paper cover-to-cover each morning. Her health is stable and she manages several chronic conditions with regular GP visits and pharmacy pickups. Her daughter lives nearby and visits twice a week.",
+      "mobilityDescription": "Low-moderate. Walks locally, occasional bus trips across London. Rare international travel.",
+      "healthBehaviorDescription": "Regular GP visits and pharmacy stops. Manages chronic conditions responsibly. Stable.",
+      "socialPatternDescription": "Small circle of longtime friends. Daughter visits regularly. Enjoys parks and local walks.",
+      "flags": {
+        "personaRiskSignalsPresent": false,
+        "personaProtectiveSignalsPresent": true
+      }
+    },
+    "timeline": {
+      "firstTimestamp": "2026-01-01T00:00:00",
+      "lastTimestamp": "2026-12-06T00:33:55",
+      "totalEvents": 10,
+      "daysCovered": 339.0236,
+      "averageDaysBetweenEvents": 37.6693,
+      "eventTypeCounts": {
+        "routine check-up": 4,
+        "preventive screening": 3,
+        "lifestyle coaching session": 3
+      }
+    },
+    "metrics": {
+      "activity": {
+        "first": 38.0,
+        "latest": 30.0,
+        "deltaFromFirst": -8.0,
+        "deltaFromRecentMean5": -6.2,
+        "min": 27.0,
+        "max": 41.0,
+        "mean": 35.5,
+        "median": 36.5,
+        "std": 3.956,
+        "slope": -0.0061
+      },
+      "sleep": {
+        "first": 47.0,
+        "latest": 49.0,
+        "deltaFromFirst": 2.0,
+        "deltaFromRecentMean5": -2.6,
+        "min": 45.0,
+        "max": 57.0,
+        "mean": 50.1,
+        "median": 50.0,
+        "std": 3.3302,
+        "slope": 0.5515
+      },
+      "exposure": {
+        "first": 29.0,
+        "latest": 35.0,
+        "deltaFromFirst": 6.0,
+        "deltaFromRecentMean5": 5.2,
+        "min": 25.0,
+        "max": 35.0,
+        "mean": 29.6,
+        "median": 28.5,
+        "std": 3.2924,
+        "slope": 0.3515
+      }
+    },
+    "locationSummary": {
+      "points": [
+        {
+          "datetime": "2026-11-23T01:59:44",
+          "lat": 51.5458,
+          "lng": -0.1073,
+          "city": "London"
+        },
+        {
+          "datetime": "2026-11-25T12:31:38",
+          "lat": 51.5072,
+          "lng": -0.0698,
+          "city": "London"
+        },
+        {
+          "datetime": "2026-11-27T04:05:48",
+          "lat": 51.5135,
+          "lng": -0.1275,
+          "city": "London"
+        },
+        {
+          "datetime": "2026-11-28T02:32:05",
+          "lat": 51.535,
+          "lng": -0.0842,
+          "city": "London"
+        },
+        {
+          "datetime": "2026-11-29T06:59:36",
+          "lat": 51.4794,
+          "lng": -0.1694,
+          "city": "London"
+        },
+        {
+          "datetime": "2026-11-30T08:47:02",
+          "lat": 51.4659,
+          "lng": -0.0784,
+          "city": "London"
+        },
+        {
+          "datetime": "2026-12-01T03:59:38",
+          "lat": 51.474,
+          "lng": -0.0856,
+          "city": "London"
+        },
+        {
+          "datetime": "2026-12-03T02:53:21",
+          "lat": 51.527,
+          "lng": -0.1434,
+          "city": "London"
+        },
+        {
+          "datetime": "2026-12-04T20:22:00",
+          "lat": 51.5072,
+          "lng": -0.1751,
+          "city": "London"
+        },
+        {
+          "datetime": "2026-12-05T18:03:33",
+          "lat": 51.5413,
+          "lng": -0.0669,
+          "city": "London"
+        }
+      ],
+      "mobilityScore": 0.4758,
+      "stabilityScore": 0.9,
+      "environmentalStressScore": 0.3774,
+      "uniqueCities10": 1,
+      "totalDistanceKm10": 47.5764,
+      "avgStepDistanceKm10": 5.2863,
+      "distanceFromHomeKm": 5.6528
+    },
+    "preprocessFlags": {
+      "lowActivityLatest": true,
+      "poorSleepLatest": true,
+      "highExposureLatest": false,
+      "decliningActivityTrend": false,
+      "decliningSleepTrend": false,
+      "risingExposureTrend": false,
+      "unstableMobility": false,
+      "highEnvironmentalStress": false,
+      "combinedBehavioralRisk": false
+    },
+    "qualityFlags": [],
+    "pythonInvestigatorPreview": {
+      "riskScore": 25,
+      "reasons": [
+        "low_activity",
+        "low_sleep"
+      ],
+      "shouldEscalate": false
+    },
+    "events": [
+      {
+        "eventId": "21",
+        "eventType": "routine check-up",
+        "timestamp": "2026-01-01T00:00:00",
+        "physicalActivityIndex": 38.0,
+        "sleepQualityIndex": 47.0,
+        "environmentalExposureLevel": 29.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.38,
+          "sleepNormalized": 0.47,
+          "exposureNormalized": 0.29,
+          "activityRiskNormalized": 0.62,
+          "sleepRiskNormalized": 0.53,
+          "exposureRiskNormalized": 0.29
+        }
+      },
+      {
+        "eventId": "22",
+        "eventType": "preventive screening",
+        "timestamp": "2026-02-09T07:36:22",
+        "physicalActivityIndex": 37.0,
+        "sleepQualityIndex": 47.0,
+        "environmentalExposureLevel": 28.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.37,
+          "sleepNormalized": 0.47,
+          "exposureNormalized": 0.28,
+          "activityRiskNormalized": 0.63,
+          "sleepRiskNormalized": 0.53,
+          "exposureRiskNormalized": 0.28
+        }
+      },
+      {
+        "eventId": "23",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-03-25T07:43:16",
+        "physicalActivityIndex": 27.0,
+        "sleepQualityIndex": 45.0,
+        "environmentalExposureLevel": 27.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.27,
+          "sleepNormalized": 0.45,
+          "exposureNormalized": 0.27,
+          "activityRiskNormalized": 0.73,
+          "sleepRiskNormalized": 0.55,
+          "exposureRiskNormalized": 0.27
+        }
+      },
+      {
+        "eventId": "24",
+        "eventType": "routine check-up",
+        "timestamp": "2026-04-26T23:24:55",
+        "physicalActivityIndex": 36.0,
+        "sleepQualityIndex": 54.0,
+        "environmentalExposureLevel": 29.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.36,
+          "sleepNormalized": 0.54,
+          "exposureNormalized": 0.29,
+          "activityRiskNormalized": 0.64,
+          "sleepRiskNormalized": 0.46,
+          "exposureRiskNormalized": 0.29
+        }
+      },
+      {
+        "eventId": "25",
+        "eventType": "preventive screening",
+        "timestamp": "2026-05-23T16:30:47",
+        "physicalActivityIndex": 36.0,
+        "sleepQualityIndex": 50.0,
+        "environmentalExposureLevel": 34.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.36,
+          "sleepNormalized": 0.5,
+          "exposureNormalized": 0.34,
+          "activityRiskNormalized": 0.64,
+          "sleepRiskNormalized": 0.5,
+          "exposureRiskNormalized": 0.34
+        }
+      },
+      {
+        "eventId": "26",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-06-26T17:03:50",
+        "physicalActivityIndex": 38.0,
+        "sleepQualityIndex": 51.0,
+        "environmentalExposureLevel": 25.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.38,
+          "sleepNormalized": 0.51,
+          "exposureNormalized": 0.25,
+          "activityRiskNormalized": 0.62,
+          "sleepRiskNormalized": 0.49,
+          "exposureRiskNormalized": 0.25
+        }
+      },
+      {
+        "eventId": "27",
+        "eventType": "routine check-up",
+        "timestamp": "2026-08-12T23:01:14",
+        "physicalActivityIndex": 38.0,
+        "sleepQualityIndex": 51.0,
+        "environmentalExposureLevel": 34.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.38,
+          "sleepNormalized": 0.51,
+          "exposureNormalized": 0.34,
+          "activityRiskNormalized": 0.62,
+          "sleepRiskNormalized": 0.49,
+          "exposureRiskNormalized": 0.34
+        }
+      },
+      {
+        "eventId": "28",
+        "eventType": "preventive screening",
+        "timestamp": "2026-09-14T16:01:23",
+        "physicalActivityIndex": 34.0,
+        "sleepQualityIndex": 57.0,
+        "environmentalExposureLevel": 28.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.34,
+          "sleepNormalized": 0.57,
+          "exposureNormalized": 0.28,
+          "activityRiskNormalized": 0.66,
+          "sleepRiskNormalized": 0.43,
+          "exposureRiskNormalized": 0.28
+        }
+      },
+      {
+        "eventId": "29",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-10-18T15:40:20",
+        "physicalActivityIndex": 41.0,
+        "sleepQualityIndex": 50.0,
+        "environmentalExposureLevel": 27.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.41,
+          "sleepNormalized": 0.5,
+          "exposureNormalized": 0.27,
+          "activityRiskNormalized": 0.59,
+          "sleepRiskNormalized": 0.5,
+          "exposureRiskNormalized": 0.27
+        }
+      },
+      {
+        "eventId": "30",
+        "eventType": "routine check-up",
+        "timestamp": "2026-12-06T00:33:55",
+        "physicalActivityIndex": 30.0,
+        "sleepQualityIndex": 49.0,
+        "environmentalExposureLevel": 35.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.3,
+          "sleepNormalized": 0.49,
+          "exposureNormalized": 0.35,
+          "activityRiskNormalized": 0.7,
+          "sleepRiskNormalized": 0.51,
+          "exposureRiskNormalized": 0.35
+        }
+      }
+    ]
+  },
+  {
+    "citizenId": "RFLFWVQA",
+    "user": {
+      "citizenId": "RFLFWVQA",
+      "birthYear": 1981,
+      "age": 45,
+      "job": "Retail Entrepreneur",
+      "residence": {
+        "city": "St. Louis Park",
+        "lat": "44.9488",
+        "lng": "-93.3649"
+      }
+    },
+    "persona": {
+      "citizenId": "RFLFWVQA",
+      "name": "Denise Fisher",
+      "ageFromPersona": 45,
+      "occupationFromPersona": "Retail Entrepreneur",
+      "cityFromPersona": "St. Louis Park, Minnesota, USA",
+      "narrative": "Denise runs a small chain of boutique clothing stores in the Minneapolis-St. Paul metro area. Her days are structured around store management: mornings at her flagship location, afternoons visiting suppliers or checking on her second store, and evenings doing inventory or bookkeeping from home. She travels several times a year for trade shows and supplier meetings, sometimes internationally. She is energetic, health-conscious, and attends a morning fitness class twice a week. She dines out frequently with business contacts and friends. On weekends, she enjoys local farmers' markets and community events.",
+      "mobilityDescription": "High. Drives across the Twin Cities daily. Multiple international trips per year for business.",
+      "healthBehaviorDescription": "Active lifestyle. Gym-goer. No unusual medical patterns.",
+      "socialPatternDescription": "Broad social and professional network. Frequent dining and networking events.",
+      "flags": {
+        "personaRiskSignalsPresent": false,
+        "personaProtectiveSignalsPresent": true
+      }
+    },
+    "timeline": {
+      "firstTimestamp": "2026-01-03T10:47:14",
+      "lastTimestamp": "2026-11-19T05:12:58",
+      "totalEvents": 10,
+      "daysCovered": 319.7679,
+      "averageDaysBetweenEvents": 35.5298,
+      "eventTypeCounts": {
+        "routine check-up": 4,
+        "preventive screening": 3,
+        "lifestyle coaching session": 3
+      }
+    },
+    "metrics": {
+      "activity": {
+        "first": 54.0,
+        "latest": 56.0,
+        "deltaFromFirst": 2.0,
+        "deltaFromRecentMean5": 1.0,
+        "min": 50.0,
+        "max": 58.0,
+        "mean": 54.9,
+        "median": 55.0,
+        "std": 2.5865,
+        "slope": 0.0909
+      },
+      "sleep": {
+        "first": 58.0,
+        "latest": 58.0,
+        "deltaFromFirst": 0.0,
+        "deltaFromRecentMean5": -0.4,
+        "min": 54.0,
+        "max": 69.0,
+        "mean": 60.0,
+        "median": 59.5,
+        "std": 4.3359,
+        "slope": -0.497
+      },
+      "exposure": {
+        "first": 45.0,
+        "latest": 47.0,
+        "deltaFromFirst": 2.0,
+        "deltaFromRecentMean5": 0.2,
+        "min": 41.0,
+        "max": 50.0,
+        "mean": 45.4,
+        "median": 45.5,
+        "std": 2.9732,
+        "slope": 0.1939
+      }
+    },
+    "locationSummary": {
+      "points": [
+        {
+          "datetime": "2026-10-28T17:41:53",
+          "lat": 44.9856,
+          "lng": -93.3979,
+          "city": "St. Louis Park"
+        },
+        {
+          "datetime": "2026-10-30T04:23:16",
+          "lat": 44.9704,
+          "lng": -93.337,
+          "city": "St. Louis Park"
+        },
+        {
+          "datetime": "2026-11-01T11:35:32",
+          "lat": 44.9704,
+          "lng": -93.3484,
+          "city": "St. Louis Park"
+        },
+        {
+          "datetime": "2026-11-04T14:43:41",
+          "lat": 44.9713,
+          "lng": -93.4284,
+          "city": "St. Louis Park"
+        },
+        {
+          "datetime": "2026-11-07T01:09:34",
+          "lat": 44.9317,
+          "lng": -93.4246,
+          "city": "St. Louis Park"
+        },
+        {
+          "datetime": "2026-11-08T21:43:18",
+          "lat": 44.9335,
+          "lng": -93.3865,
+          "city": "St. Louis Park"
+        },
+        {
+          "datetime": "2026-11-09T18:06:35",
+          "lat": 44.9057,
+          "lng": -93.3611,
+          "city": "St. Louis Park"
+        },
+        {
+          "datetime": "2026-11-12T11:39:32",
+          "lat": 44.921,
+          "lng": -93.3433,
+          "city": "St. Louis Park"
+        },
+        {
+          "datetime": "2026-11-14T00:25:49",
+          "lat": 44.912,
+          "lng": -93.4093,
+          "city": "St. Louis Park"
+        },
+        {
+          "datetime": "2026-11-18T07:14:59",
+          "lat": 44.9883,
+          "lng": -93.3789,
+          "city": "St. Louis Park"
+        }
+      ],
+      "mobilityScore": 0.3968,
+      "stabilityScore": 0.9,
+      "environmentalStressScore": 0.311,
+      "uniqueCities10": 1,
+      "totalDistanceKm10": 39.6834,
+      "avgStepDistanceKm10": 4.4093,
+      "distanceFromHomeKm": 4.5282
+    },
+    "preprocessFlags": {
+      "lowActivityLatest": false,
+      "poorSleepLatest": false,
+      "highExposureLatest": false,
+      "decliningActivityTrend": false,
+      "decliningSleepTrend": false,
+      "risingExposureTrend": false,
+      "unstableMobility": false,
+      "highEnvironmentalStress": false,
+      "combinedBehavioralRisk": false
+    },
+    "qualityFlags": [],
+    "pythonInvestigatorPreview": {
+      "riskScore": 0,
+      "reasons": [],
+      "shouldEscalate": false
+    },
+    "events": [
+      {
+        "eventId": "11",
+        "eventType": "routine check-up",
+        "timestamp": "2026-01-03T10:47:14",
+        "physicalActivityIndex": 54.0,
+        "sleepQualityIndex": 58.0,
+        "environmentalExposureLevel": 45.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.54,
+          "sleepNormalized": 0.58,
+          "exposureNormalized": 0.45,
+          "activityRiskNormalized": 0.46,
+          "sleepRiskNormalized": 0.42,
+          "exposureRiskNormalized": 0.45
+        }
+      },
+      {
+        "eventId": "12",
+        "eventType": "preventive screening",
+        "timestamp": "2026-02-02T15:59:19",
+        "physicalActivityIndex": 58.0,
+        "sleepQualityIndex": 62.0,
+        "environmentalExposureLevel": 46.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.58,
+          "sleepNormalized": 0.62,
+          "exposureNormalized": 0.46,
+          "activityRiskNormalized": 0.42,
+          "sleepRiskNormalized": 0.38,
+          "exposureRiskNormalized": 0.46
+        }
+      },
+      {
+        "eventId": "13",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-03-24T04:21:47",
+        "physicalActivityIndex": 57.0,
+        "sleepQualityIndex": 61.0,
+        "environmentalExposureLevel": 42.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.57,
+          "sleepNormalized": 0.61,
+          "exposureNormalized": 0.42,
+          "activityRiskNormalized": 0.43,
+          "sleepRiskNormalized": 0.39,
+          "exposureRiskNormalized": 0.42
+        }
+      },
+      {
+        "eventId": "14",
+        "eventType": "routine check-up",
+        "timestamp": "2026-04-24T19:24:33",
+        "physicalActivityIndex": 52.0,
+        "sleepQualityIndex": 58.0,
+        "environmentalExposureLevel": 46.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.52,
+          "sleepNormalized": 0.58,
+          "exposureNormalized": 0.46,
+          "activityRiskNormalized": 0.48,
+          "sleepRiskNormalized": 0.42,
+          "exposureRiskNormalized": 0.46
+        }
+      },
+      {
+        "eventId": "15",
+        "eventType": "preventive screening",
+        "timestamp": "2026-05-31T01:30:49",
+        "physicalActivityIndex": 53.0,
+        "sleepQualityIndex": 69.0,
+        "environmentalExposureLevel": 41.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.53,
+          "sleepNormalized": 0.69,
+          "exposureNormalized": 0.41,
+          "activityRiskNormalized": 0.47,
+          "sleepRiskNormalized": 0.31,
+          "exposureRiskNormalized": 0.41
+        }
+      },
+      {
+        "eventId": "16",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-07-13T01:00:46",
+        "physicalActivityIndex": 50.0,
+        "sleepQualityIndex": 63.0,
+        "environmentalExposureLevel": 50.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.5,
+          "sleepNormalized": 0.63,
+          "exposureNormalized": 0.5,
+          "activityRiskNormalized": 0.5,
+          "sleepRiskNormalized": 0.37,
+          "exposureRiskNormalized": 0.5
+        }
+      },
+      {
+        "eventId": "17",
+        "eventType": "routine check-up",
+        "timestamp": "2026-08-17T23:10:50",
+        "physicalActivityIndex": 57.0,
+        "sleepQualityIndex": 63.0,
+        "environmentalExposureLevel": 50.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.57,
+          "sleepNormalized": 0.63,
+          "exposureNormalized": 0.5,
+          "activityRiskNormalized": 0.43,
+          "sleepRiskNormalized": 0.37,
+          "exposureRiskNormalized": 0.5
+        }
+      },
+      {
+        "eventId": "18",
+        "eventType": "preventive screening",
+        "timestamp": "2026-09-11T07:52:03",
+        "physicalActivityIndex": 54.0,
+        "sleepQualityIndex": 54.0,
+        "environmentalExposureLevel": 42.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.54,
+          "sleepNormalized": 0.54,
+          "exposureNormalized": 0.42,
+          "activityRiskNormalized": 0.46,
+          "sleepRiskNormalized": 0.46,
+          "exposureRiskNormalized": 0.42
+        }
+      },
+      {
+        "eventId": "19",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-10-23T01:31:55",
+        "physicalActivityIndex": 58.0,
+        "sleepQualityIndex": 54.0,
+        "environmentalExposureLevel": 45.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.58,
+          "sleepNormalized": 0.54,
+          "exposureNormalized": 0.45,
+          "activityRiskNormalized": 0.42,
+          "sleepRiskNormalized": 0.46,
+          "exposureRiskNormalized": 0.45
+        }
+      },
+      {
+        "eventId": "20",
+        "eventType": "routine check-up",
+        "timestamp": "2026-11-19T05:12:58",
+        "physicalActivityIndex": 56.0,
+        "sleepQualityIndex": 58.0,
+        "environmentalExposureLevel": 47.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.56,
+          "sleepNormalized": 0.58,
+          "exposureNormalized": 0.47,
+          "activityRiskNormalized": 0.44,
+          "sleepRiskNormalized": 0.42,
+          "exposureRiskNormalized": 0.47
+        }
+      }
+    ]
+  },
+  {
+    "citizenId": "WNACROYX",
+    "user": {
+      "citizenId": "WNACROYX",
+      "birthYear": 1991,
+      "age": 35,
+      "job": "Ride-share Driver",
+      "residence": {
+        "city": "Bath",
+        "lat": "51.3814",
+        "lng": "-2.3597"
+      }
+    },
+    "persona": {
+      "citizenId": "WNACROYX",
+      "name": "Craig Connor",
+      "ageFromPersona": 35,
+      "occupationFromPersona": "Ride-share Driver",
+      "cityFromPersona": "Bath, United Kingdom",
+      "narrative": "Craig is a full-time ride-share driver based in Bath. His schedule is irregular and has become more so recently: some weeks he drives mornings, other weeks he works late nights, and there have been stretches where he barely drives at all. He covers significant distances when active, often picking up passengers heading to Bristol, Cardiff, or London. He used to be sociable, spending off-hours at pubs and watching football with mates, but friends have noted he has been cancelling plans more often. His diet has shifted heavily toward energy drinks and fast food. He used to enjoy budget trips abroad but has not traveled in a while. He has mentioned persistent back pain from driving and has started sleeping poorly, sometimes only managing a few hours. He does not talk about it much but colleagues have noticed he looks increasingly run-down.",
+      "mobilityDescription": "Variable. Can be very high during active periods, but has been taking more days off. International travel has stopped.",
+      "healthBehaviorDescription": "Irregular meals, heavy reliance on energy drinks. Mentioned back pain. Sleep issues. Avoids medical checkups.",
+      "socialPatternDescription": "Previously active social life, now increasingly cancelling plans. Spending more time alone.",
+      "flags": {
+        "personaRiskSignalsPresent": true,
+        "personaProtectiveSignalsPresent": true
+      }
+    },
+    "timeline": {
+      "firstTimestamp": "2026-01-01T00:00:00",
+      "lastTimestamp": "2026-10-22T23:28:49",
+      "totalEvents": 10,
+      "daysCovered": 294.9783,
+      "averageDaysBetweenEvents": 32.7754,
+      "eventTypeCounts": {
+        "routine check-up": 1,
+        "preventive screening": 2,
+        "lifestyle coaching session": 1,
+        "specialist consultation": 3,
+        "follow-up assessment": 3
+      }
+    },
+    "metrics": {
+      "activity": {
+        "first": 53.0,
+        "latest": 17.0,
+        "deltaFromFirst": -36.0,
+        "deltaFromRecentMean5": -9.8,
+        "min": 17.0,
+        "max": 53.0,
+        "mean": 36.6,
+        "median": 38.0,
+        "std": 11.6465,
+        "slope": -3.9152
+      },
+      "sleep": {
+        "first": 58.0,
+        "latest": 20.0,
+        "deltaFromFirst": -38.0,
+        "deltaFromRecentMean5": -21.6,
+        "min": 20.0,
+        "max": 60.0,
+        "mean": 47.9,
+        "median": 51.0,
+        "std": 11.5624,
+        "slope": -2.4667
+      },
+      "exposure": {
+        "first": 45.0,
+        "latest": 91.0,
+        "deltaFromFirst": 46.0,
+        "deltaFromRecentMean5": 12.4,
+        "min": 45.0,
+        "max": 91.0,
+        "mean": 67.1,
+        "median": 69.5,
+        "std": 14.5221,
+        "slope": 4.8303
+      }
+    },
+    "locationSummary": {
+      "points": [
+        {
+          "datetime": "2026-10-10T20:32:02",
+          "lat": 51.42,
+          "lng": -2.4029,
+          "city": "Bath"
+        },
+        {
+          "datetime": "2026-10-11T15:12:49",
+          "lat": 51.3751,
+          "lng": -2.3021,
+          "city": "Bath"
+        },
+        {
+          "datetime": "2026-10-12T14:01:52",
+          "lat": 51.4182,
+          "lng": -2.4173,
+          "city": "Bath"
+        },
+        {
+          "datetime": "2026-10-13T02:08:05",
+          "lat": 51.3383,
+          "lng": -2.3496,
+          "city": "Bath"
+        },
+        {
+          "datetime": "2026-10-14T05:11:48",
+          "lat": 51.3751,
+          "lng": -2.3784,
+          "city": "Bath"
+        },
+        {
+          "datetime": "2026-10-15T13:57:07",
+          "lat": 51.3949,
+          "lng": -2.4187,
+          "city": "Bath"
+        },
+        {
+          "datetime": "2026-10-17T19:27:41",
+          "lat": 51.3383,
+          "lng": -2.4115,
+          "city": "Bath"
+        },
+        {
+          "datetime": "2026-10-18T13:34:04",
+          "lat": 51.376,
+          "lng": -2.4288,
+          "city": "Bath"
+        },
+        {
+          "datetime": "2026-10-21T17:08:33",
+          "lat": 51.3365,
+          "lng": -2.3482,
+          "city": "Bath"
+        },
+        {
+          "datetime": "2026-10-22T03:17:44",
+          "lat": 51.3634,
+          "lng": -2.3885,
+          "city": "Bath"
+        }
+      ],
+      "mobilityScore": 0.5796,
+      "stabilityScore": 0.9,
+      "environmentalStressScore": 0.3786,
+      "uniqueCities10": 1,
+      "totalDistanceKm10": 57.9607,
+      "avgStepDistanceKm10": 6.4401,
+      "distanceFromHomeKm": 2.8289
+    },
+    "preprocessFlags": {
+      "lowActivityLatest": true,
+      "poorSleepLatest": true,
+      "highExposureLatest": true,
+      "decliningActivityTrend": true,
+      "decliningSleepTrend": true,
+      "risingExposureTrend": true,
+      "unstableMobility": false,
+      "highEnvironmentalStress": false,
+      "combinedBehavioralRisk": true
+    },
+    "qualityFlags": [],
+    "pythonInvestigatorPreview": {
+      "riskScore": 100,
+      "reasons": [
+        "critical_activity_low",
+        "critical_sleep_low",
+        "very_high_exposure",
+        "activity_declining_trend",
+        "sleep_declining_trend",
+        "exposure_rising_trend",
+        "stacked_risk_signals"
+      ],
+      "shouldEscalate": true
+    },
+    "events": [
+      {
+        "eventId": "31",
+        "eventType": "routine check-up",
+        "timestamp": "2026-01-01T00:00:00",
+        "physicalActivityIndex": 53.0,
+        "sleepQualityIndex": 58.0,
+        "environmentalExposureLevel": 45.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.53,
+          "sleepNormalized": 0.58,
+          "exposureNormalized": 0.45,
+          "activityRiskNormalized": 0.47,
+          "sleepRiskNormalized": 0.42,
+          "exposureRiskNormalized": 0.45
+        }
+      },
+      {
+        "eventId": "32",
+        "eventType": "preventive screening",
+        "timestamp": "2026-04-08T13:22:38",
+        "physicalActivityIndex": 47.0,
+        "sleepQualityIndex": 56.0,
+        "environmentalExposureLevel": 45.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.47,
+          "sleepNormalized": 0.56,
+          "exposureNormalized": 0.45,
+          "activityRiskNormalized": 0.53,
+          "sleepRiskNormalized": 0.44,
+          "exposureRiskNormalized": 0.45
+        }
+      },
+      {
+        "eventId": "33",
+        "eventType": "lifestyle coaching session",
+        "timestamp": "2026-05-29T08:30:22",
+        "physicalActivityIndex": 49.0,
+        "sleepQualityIndex": 51.0,
+        "environmentalExposureLevel": 64.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.49,
+          "sleepNormalized": 0.51,
+          "exposureNormalized": 0.64,
+          "activityRiskNormalized": 0.51,
+          "sleepRiskNormalized": 0.49,
+          "exposureRiskNormalized": 0.64
+        }
+      },
+      {
+        "eventId": "34",
+        "eventType": "specialist consultation",
+        "timestamp": "2026-07-08T06:54:20",
+        "physicalActivityIndex": 44.0,
+        "sleepQualityIndex": 55.0,
+        "environmentalExposureLevel": 54.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.44,
+          "sleepNormalized": 0.55,
+          "exposureNormalized": 0.54,
+          "activityRiskNormalized": 0.56,
+          "sleepRiskNormalized": 0.45,
+          "exposureRiskNormalized": 0.54
+        }
+      },
+      {
+        "eventId": "35",
+        "eventType": "preventive screening",
+        "timestamp": "2026-08-13T18:08:56",
+        "physicalActivityIndex": 39.0,
+        "sleepQualityIndex": 51.0,
+        "environmentalExposureLevel": 70.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.39,
+          "sleepNormalized": 0.51,
+          "exposureNormalized": 0.7,
+          "activityRiskNormalized": 0.61,
+          "sleepRiskNormalized": 0.49,
+          "exposureRiskNormalized": 0.7
+        }
+      },
+      {
+        "eventId": "36",
+        "eventType": "follow-up assessment",
+        "timestamp": "2026-09-13T12:49:52",
+        "physicalActivityIndex": 37.0,
+        "sleepQualityIndex": 48.0,
+        "environmentalExposureLevel": 69.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.37,
+          "sleepNormalized": 0.48,
+          "exposureNormalized": 0.69,
+          "activityRiskNormalized": 0.63,
+          "sleepRiskNormalized": 0.52,
+          "exposureRiskNormalized": 0.69
+        }
+      },
+      {
+        "eventId": "37",
+        "eventType": "specialist consultation",
+        "timestamp": "2026-10-13T23:28:49",
+        "physicalActivityIndex": 27.0,
+        "sleepQualityIndex": 35.0,
+        "environmentalExposureLevel": 74.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.27,
+          "sleepNormalized": 0.35,
+          "exposureNormalized": 0.74,
+          "activityRiskNormalized": 0.73,
+          "sleepRiskNormalized": 0.65,
+          "exposureRiskNormalized": 0.74
+        }
+      },
+      {
+        "eventId": "38",
+        "eventType": "follow-up assessment",
+        "timestamp": "2026-10-15T23:28:49",
+        "physicalActivityIndex": 33.0,
+        "sleepQualityIndex": 45.0,
+        "environmentalExposureLevel": 77.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.33,
+          "sleepNormalized": 0.45,
+          "exposureNormalized": 0.77,
+          "activityRiskNormalized": 0.67,
+          "sleepRiskNormalized": 0.55,
+          "exposureRiskNormalized": 0.77
+        }
+      },
+      {
+        "eventId": "39",
+        "eventType": "specialist consultation",
+        "timestamp": "2026-10-18T23:28:49",
+        "physicalActivityIndex": 20.0,
+        "sleepQualityIndex": 60.0,
+        "environmentalExposureLevel": 82.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.2,
+          "sleepNormalized": 0.6,
+          "exposureNormalized": 0.82,
+          "activityRiskNormalized": 0.8,
+          "sleepRiskNormalized": 0.4,
+          "exposureRiskNormalized": 0.82
+        }
+      },
+      {
+        "eventId": "40",
+        "eventType": "follow-up assessment",
+        "timestamp": "2026-10-22T23:28:49",
+        "physicalActivityIndex": 17.0,
+        "sleepQualityIndex": 20.0,
+        "environmentalExposureLevel": 91.0,
+        "normalizedMetrics": {
+          "activityNormalized": 0.17,
+          "sleepNormalized": 0.2,
+          "exposureNormalized": 0.91,
+          "activityRiskNormalized": 0.83,
+          "sleepRiskNormalized": 0.8,
+          "exposureRiskNormalized": 0.91
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "level": "public_lev_3",
+  "totalCitizens": 30,
+  "totalEvents": 1000,
+  "skippedCitizens": 0,
+  "personaCoverage": {
+    "citizensWithPersona": 30,
+    "citizensWithoutPersona": 0
+  },
+  "qualityFlagCounts": {},
+  "preprocessFlagCounts": {
+    "highEnvironmentalStress": 6,
+    "lowActivityLatest": 5,
+    "poorSleepLatest": 6,
+    "highExposureLatest": 5,
+    "combinedBehavioralRisk": 5
+  },
+  "pythonPreviewEscalations": 5
+}

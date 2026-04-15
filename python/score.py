@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""
-Optional local scoring helper for data team experiments.
-Keeps this folder independent from the TypeScript agent pipeline.
-"""
+"""Quick helper to inspect cleaned dataset sizes per sandbox level."""
 
 from __future__ import annotations
 
@@ -10,17 +7,20 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-INPUT_JSON = ROOT / "data" / "cleaned" / "transactions.json"
+CLEANED_ROOT = ROOT / "data" / "cleaned"
 
 
 def main() -> None:
-    if not INPUT_JSON.exists():
-        raise FileNotFoundError(f"Missing input: {INPUT_JSON}")
+    levels = sorted(CLEANED_ROOT.glob("public_lev_*/monitoring-events.json"))
+    if not levels:
+        raise FileNotFoundError(
+            "Missing cleaned monitoring events. Run python/clean.py first."
+        )
 
-    with INPUT_JSON.open("r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    print(f"Transactions available for scoring: {len(data)}")
+    for path in levels:
+        with path.open("r", encoding="utf-8") as handle:
+            records = json.load(handle)
+        print(f"{path.parent.name}: {len(records)} records in {path.name}")
 
 
 if __name__ == "__main__":
