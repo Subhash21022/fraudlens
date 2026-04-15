@@ -7,6 +7,7 @@ export function buildPreventiveSupportPrompt(
    citizen: CitizenSummaryInput,
    investigation: InvestigationResult
 ): string {
+   const fullCitizenPayload = JSON.stringify(citizen, null, 2);
    const topIndicators =
       investigation.riskIndicators.length > 0
          ? investigation.riskIndicators
@@ -44,6 +45,11 @@ export function buildPreventiveSupportPrompt(
       `- Environmental stress score: ${citizen.locationSummary?.environmentalStressScore ?? 0}`,
       `- Persona risk signal: ${citizen.persona?.flags?.personaRiskSignalsPresent ?? false}`,
       `- Persona protective signal: ${citizen.persona?.flags?.personaProtectiveSignalsPresent ?? false}`,
+      '',
+      'Full citizen payload (use this entire object in your reasoning):',
+      '```json',
+      fullCitizenPayload,
+      '```',
       '',
       'Investigator output:',
       `- Risk score: ${investigation.riskScore}`,

@@ -99,8 +99,12 @@ async function ensureLangfuseInitialized(): Promise<boolean> {
 
 export async function startLangfuseRun(): Promise<LangfuseRunContext> {
    const enabled = await ensureLangfuseInitialized();
+   const fixedSessionId = envConfig.LANGFUSE_SESSION_ID?.trim();
    const context = {
-      sessionId: generateSessionId(),
+      sessionId:
+         fixedSessionId && fixedSessionId.length > 0
+            ? fixedSessionId
+            : generateSessionId(),
       enabled,
    };
 

@@ -20,6 +20,7 @@ export const envSchema = z.object({
    TEAM_NAME: z.string().default('tutorial'),
    LANGFUSE_PUBLIC_KEY: z.string().optional(),
    LANGFUSE_SECRET_KEY: z.string().optional(),
+   LANGFUSE_SESSION_ID: z.string().optional(),
    LANGFUSE_HOST: z
       .string()
       .url()
@@ -39,7 +40,7 @@ export const appConfig = {
 // Change this one value when you want to switch challenge datasets.
 export const AGENT_INPUT_FILE = path.resolve(
    process.cwd(),
-   'data/cleaned/public_lev_1/monitoring-events.json'
+   'data/cleaned/public_lev_3/monitoring-events.json'
 );
 
 export const AGENT_DATASET_LABEL = path.basename(
